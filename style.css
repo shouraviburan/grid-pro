@@ -1,0 +1,96 @@
+body {
+    background-image: linear-gradient(#FFDFD3, #E0BBE4);
+    min-height: 100vh;
+    
+}
+
+#project {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2.5fr 4fr 4fr 3fr 3fr 3fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    width: 80vmin;
+    height: 80vmin;
+    gap: 3px 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+#project > div {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#one {
+    grid-column: 1 / 9;
+    grid-row: 1 / 2;
+    background-color: #fff;
+}
+
+#two {
+    grid-column: 1 / 2;
+    grid-row: 2 / 7;
+    background-color: antiquewhite;
+}
+
+#three {
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    background-color: antiquewhite;
+}
+
+#eight {
+    grid-column: 2 / 4;
+    grid-row: 4 / 7;
+    background-color: antiquewhite;
+}
+
+#nine {
+    grid-column: 4 / 6;
+    grid-row: 4 / 5;
+    background-color: antiquewhite;
+}
+
+#ten {
+    grid-column: 4 / 6;
+    grid-row: 5 / 6;
+    background-color: antiquewhite;
+}
+
+#eleven {
+    grid-column: 4 / 6;
+    grid-row: 6 / 7;
+    background-color: antiquewhite;
+}
+
+#twelve {
+    grid-column: 6 / 8;
+    grid-row: 4 / 7;
+    background-color: antiquewhite;
+
+}
+#thirteen {
+    grid-column: 8 / 9;
+    grid-row: 2 / 7;
+    background-color: antiquewhite;
+}
+
+#small-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 5 / 8;
+    grid-row: 2 / 4;
+    background-color: burlywood;
+}
+
+.small {
+    margin: 5px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #E0BBE4;
+}
