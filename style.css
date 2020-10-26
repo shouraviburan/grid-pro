@@ -10,10 +10,10 @@ body {
     grid-template-rows: 2.5fr 4fr 4fr 3fr 3fr 3fr;
     margin-left: auto;
     margin-right: auto;
-    padding: 3px;
+    padding: 5px;
     width: 80vmin;
     height: 80vmin;
-    gap: 3px 3px;
+    gap: 5px 5px;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
@@ -89,8 +89,98 @@ body {
 }
 
 .small {
-    margin: 5px; 
+    margin: 3px; 
     border: 1px solid black;
     border-radius: 5px;
     background-color: #E0BBE4;
+}
+
+@media only screen and (max-width: 768px) {
+    #two, #thirteen {
+        display: none;
+    }
+
+    #project {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 3fr 3fr 1fr 1fr 1fr 2.5fr;
+    }
+
+    #one {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+        
+    #three {
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+    }
+    
+    #eight {
+        grid-column: 1 / 2;
+        grid-row: 4 / 7;
+    }
+
+    #small-four {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    #nine {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+    
+    #ten {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+    
+    #eleven {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
+    
+    #twelve {
+        grid-column: 1 / 3;
+        grid-row: 7 / 8;
+    
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    #project {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 3fr 3fr 3fr 1fr 1fr 1fr 3fr;
+    }
+    /* the previous entries are already working, no need to type them again */
+
+    #eight {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    #nine {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+    
+    #ten {
+        grid-column: 1 / 3;
+        grid-row: 6 / 7;
+    }
+    
+    #eleven {
+        grid-column: 1 / 3;
+        grid-row: 7 / 8;
+    }
+    
+    #twelve {
+        grid-column: 1 / 3;
+        grid-row: 8 / 9; 
+    }
+
 }
